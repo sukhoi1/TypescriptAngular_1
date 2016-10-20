@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="tsAngularDemo">
+<head>
+</head>
+<body ng-controller="DemoController">
+
+    <h1>{{todo.user}}</h1>
+
+
+    <script src="./libs/angular.min.js"></script>
+    <script src="./app/DemoController.js"></script>
+    <script>
+        var tsAngularDemo = angular.module("tsAngularDemo", []);
+        tsAngularDemo.controller("DemoController", TsAngular.DemoController);
+    </script>
+
+</body>
+</html>
